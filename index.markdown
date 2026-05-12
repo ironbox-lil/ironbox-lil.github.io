@@ -1,13 +1,15 @@
 ---
 layout: default
+title: Lil Tang
 ---
+
 <div class="home">
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Self-Introduction -->
   <section class="hero">
     <div class="hero-content">
       <h1 class="hero-name">{{ site.author.name }}</h1>
-      <p class="hero-title">北京航空航天大学软件学院 · 科研实习生</p>
+      <p class="hero-title">北京航空航天大学软件学院 · 大三</p>
       <p class="hero-focus">数据挖掘 · 具身智能 · 大模型 (LLM)</p>
       <div class="hero-links">
         <a href="mailto:{{ site.author.email }}" class="hero-link-item">
@@ -23,35 +25,29 @@ layout: default
     </div>
   </section>
 
-  <!-- Education -->
-  <section class="section">
-    <h2 class="section-title">教育背景</h2>
-    <div class="education-card">
-      <div class="edu-header">
-        <h3>北京航空航天大学</h3>
-        <span class="edu-period">2023.9 ~ 至今</span>
-      </div>
-      <p class="edu-degree">软件学院 · 软件工程本科</p>
-      <div class="edu-details">
-        <div class="edu-detail-block">
-          <span class="edu-detail-title">主修</span>
-          <span>操作系统、数据管理技术、人工智能基础、面向对象程序设计、软件工程基础</span>
-        </div>
-        <div class="edu-detail-block">
-          <span class="edu-detail-title">辅修</span>
-          <span>应用数学二学位：数值分析、概率论、最优化理论、数学建模</span>
-        </div>
-      </div>
-      <div class="edu-gpa">
-        <span class="gpa-label">GPA</span>
-        <span class="gpa-value">3.742 / 4</span>
-        <span class="gpa-rank">院排名 16 / 158</span>
+  <!-- Self Introduction -->
+  <section class="section intro-section">
+    <div class="intro-card">
+      <h2 class="section-title">关于我</h2>
+      <p class="intro-text">
+        我是北航软件学院大三学生，目前在邓攀教授的时空数据挖掘实验室从事科研实习。
+        我的研究方向主要集中在数据挖掘与大模型应用，具体包括轨迹生成、时空数据分析以及大模型的结构化输出优化。
+      </p>
+      <p class="intro-text">
+        目前已有 KDD 2026 共同一作在投（CCF-A）、IJCAI 2026 三作在投（CCF-B），
+        预计 7 月投递 ICSE，预计 8 月投递 AAAI。本科期间获首都挑战杯擂主特等奖、挑战杯揭榜挂帅擂主特等奖等荣誉。
+      </p>
+      <div class="intro-tags">
+        <span class="intro-tag">科研</span>
+        <span class="intro-tag">数据挖掘</span>
+        <span class="intro-tag">大模型</span>
+        <span class="intro-tag">论文发表</span>
       </div>
     </div>
   </section>
 
   <!-- Publications -->
-  <section class="section">
+  <section class="section" id="publications">
     <h2 class="section-title">论文发表</h2>
     <div class="pub-list">
       <div class="pub-item">
@@ -74,62 +70,9 @@ layout: default
     </div>
   </section>
 
-  <!-- Experience -->
-  <section class="section">
-    <h2 class="section-title">科研经历</h2>
-    <div class="exp-list">
-      <div class="exp-item">
-        <div class="exp-header">
-          <div class="exp-title-block">
-            <h3 class="exp-title">北航时空数据挖掘实验室</h3>
-            <span class="exp-role">本科科研实习生</span>
-          </div>
-          <span class="exp-period">2024.9 ~ 至今</span>
-        </div>
-        <p class="exp-supervisor">导师：北航软件学院邓攀教授</p>
-        <ul class="exp-bullets">
-          <li>每周负责时空数据相关前沿论文汇报，代码复现</li>
-          <li>熟练掌握生成模型 Transformer、Diffusion，完成组内基线实验，协助论文写作</li>
-          <li>已与师兄合作完成两篇论文（KDD 共一、IJCAI 三作在投）</li>
-        </ul>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-header">
-          <div class="exp-title-block">
-            <h3 class="exp-title">形式化方法实验室</h3>
-            <span class="exp-role">科研实习生</span>
-          </div>
-          <span class="exp-period">2025.9 ~ 至今</span>
-        </div>
-        <p class="exp-supervisor">导师：北航软件学院葛宁教授</p>
-        <ul class="exp-bullets">
-          <li>安全关键系统软件建模，结合形式化方法优化大模型生成质量</li>
-          <li>方向：LLM 结构化数据生成优化、形式化方法约束表达</li>
-          <li>预计 7 月投递 ICSE 论文（二作/共一）</li>
-        </ul>
-      </div>
-
-      <div class="exp-item">
-        <div class="exp-header">
-          <div class="exp-title-block">
-            <h3 class="exp-title">ACT 实验室</h3>
-            <span class="exp-role">科研实习生</span>
-          </div>
-          <span class="exp-period">2025.9 ~ 至今</span>
-        </div>
-        <p class="exp-supervisor">导师：计算机学院陈天宇博士</p>
-        <ul class="exp-bullets">
-          <li>AI4Science 与 LLM 结合：应用 MLLM 对天文学星图分类及数值预测回归</li>
-          <li>科学新范式推导的 Agent 研究</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
   <!-- Projects -->
-  <section class="section">
-    <h2 class="section-title">项目经历</h2>
+  <section class="section" id="projects">
+    <h2 class="section-title">项目实践</h2>
     <div class="proj-list">
       <div class="proj-item">
         <div class="proj-header">
@@ -159,9 +102,57 @@ layout: default
     </div>
   </section>
 
-  <!-- Awards -->
-  <section class="section">
-    <h2 class="section-title">获奖情况</h2>
+  <!-- Lab Experience Summary -->
+  <section class="section" id="experience">
+    <h2 class="section-title">科研经历</h2>
+    <div class="exp-list">
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="exp-title-block">
+            <h3 class="exp-title">北航时空数据挖掘实验室</h3>
+            <span class="exp-role">邓攀教授</span>
+          </div>
+          <span class="exp-period">2024.9 ~ 至今</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>时空数据相关前沿论文汇报，代码复现</li>
+          <li>Transformer、Diffusion 等生成模型，基线实验与论文写作</li>
+          <li>KDD 共一、IJCAI 三作在投</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="exp-title-block">
+            <h3 class="exp-title">形式化方法实验室</h3>
+            <span class="exp-role">葛宁教授</span>
+          </div>
+          <span class="exp-period">2025.9 ~ 至今</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>安全关键系统软件建模，形式化方法优化大模型生成</li>
+          <li>预计 7 月投递 ICSE 论文</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-header">
+          <div class="exp-title-block">
+            <h3 class="exp-title">ACT 实验室</h3>
+            <span class="exp-role">陈天宇博士</span>
+          </div>
+          <span class="exp-period">2025.9 ~ 至今</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>AI4Science 与 LLM 结合：MLLM 天文学星图分类、科学推理 Agent</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards Preview -->
+  <section class="section" id="awards">
+    <h2 class="section-title">荣誉奖项</h2>
     <div class="awards-grid">
       <div class="award-item major">
         <span class="award-name">首都挑战杯擂主特等奖</span>
@@ -171,55 +162,18 @@ layout: default
       </div>
       <div class="award-item major">
         <span class="award-name">北航软件学院团队之星</span>
-        <span class="award-note">学院最高荣誉</span>
       </div>
       <div class="award-item">
         <span class="award-name">中国软件杯二等奖</span>
       </div>
       <div class="award-item">
-        <span class="award-name">京彩大创二等奖</span>
-      </div>
-      <div class="award-item">
         <span class="award-name">九号公司一等奖学金</span>
-      </div>
-      <div class="award-item">
-        <span class="award-name">省部级大创负责人</span>
-      </div>
-      <div class="award-item">
-        <span class="award-name">北京市大学生数学竞赛二等奖</span>
-      </div>
-      <div class="award-item">
-        <span class="award-name">北京市大学生物理竞赛二等奖</span>
       </div>
       <div class="award-item">
         <span class="award-name">美国大学生数学建模竞赛 H 奖</span>
       </div>
-      <div class="award-item">
-        <span class="award-name">校级三好学生</span>
-      </div>
-      <div class="award-item">
-        <span class="award-name">冯如杯科创竞赛主赛道论文组三等奖</span>
-      </div>
     </div>
-  </section>
-
-  <!-- Skills -->
-  <section class="section">
-    <h2 class="section-title">专业技能</h2>
-    <div class="skills-section">
-      <div class="skill-group">
-        <span class="skill-label">科研方向</span>
-        <span class="skill-value">数据挖掘 · 时空数据分析 · 具身智能 · 大模型微调与应用</span>
-      </div>
-      <div class="skill-group">
-        <span class="skill-label">数学背景</span>
-        <span class="skill-value">数值分析 · 概率论 · 最优化理论 · 数学建模</span>
-      </div>
-      <div class="skill-group">
-        <span class="skill-label">开发能力</span>
-        <span class="skill-value">Python · Java · 前端开发 · 全栈项目经验</span>
-      </div>
-    </div>
+    <a href="/resume/" class="view-more">查看完整简历 →</a>
   </section>
 
 </div>

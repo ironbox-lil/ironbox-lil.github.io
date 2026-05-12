@@ -4,9 +4,9 @@ title: 作品集
 permalink: /about/
 ---
 
-<div class="page-content">
+<div class="portfolio-page">
   <h1 class="page-heading">作品集</h1>
-  <p class="page-subtitle">科研项目与技术实践</p>
+  <p class="portfolio-subtitle">科研项目与技术实践</p>
 
   <div class="portfolio-grid">
 
@@ -83,44 +83,3 @@ permalink: /about/
 
   </div>
 </div>
-
-<style>
-.page-subtitle {
-  color: #888;
-  margin-top: -1.5rem;
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
-}
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-.portfolio-item {
-  background: #fff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.portfolio-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.portfolio-header h3 { font-size: 1.1rem; color: #1a1a2e; }
-.portfolio-period { color: #888; font-size: 0.8rem; }
-.portfolio-supervisor { color: #e94560; font-size: 0.85rem; }
-.portfolio-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-.tag {
-  background: #f0f4f8;
-  color: #4a90d9;
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-.portfolio-desc { color: #666; font-size: 0.9rem; margin-top: 0.5rem; }
-</style>
